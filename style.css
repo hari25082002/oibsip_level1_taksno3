@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #333;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .input-wrapper button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-wrapper button:hover {
+    background-color: #555;
+  }
+  
+  .lists-wrapper {
+    display: flex;
+  }
+  
+  .pending-tasks,
+  .completed-tasks {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .pending-tasks h2,
+  .completed-tasks h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .pending-tasks ul,
+  .completed-tasks ul {
+    list-style: none;
+  }
+  
+  .pending-tasks li,
+  .completed-tasks li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .pending-tasks li:hover,
+  .completed-tasks li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pending-tasks .complete-btn,
+  .completed-tasks .delete-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .pending-tasks .complete-btn:hover,
+  .completed-tasks .delete-btn:hover {
+  background-color: #555;
+  }
+  
+  .pending-tasks .complete-btn {
+  margin-right: 10px;
+  }
+  
+  .completed-tasks .restore-btn {
+  background-color: #888;
+  margin-right: 10px;
+  }
+  
+  .pending-tasks .edit-btn,
+  .completed-tasks .edit-btn {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .pending-tasks .edit-btn:hover,
+  .completed-tasks .edit-btn:hover {
+  background-color: #eee;
+  }
